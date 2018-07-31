@@ -1,0 +1,181 @@
+body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.area{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 3px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.area h2{
+    margin: 0;
+    padding:0;
+}
+
+.area label{
+    display: block;
+    line-height: 100%;
+    margin-top: 10px;
+}
+
+.area input,
+.area select{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #0163ad;
+    background: #fff;
+    display: block;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 4px;
+}
+.area input[type="button"]{
+    background: #0163ad;
+    color: #fff;
+    height: auto;
+    padding: 10px;
+    line-height: 100%;
+}
+
+.row{
+    height: 100%;
+}
+.col-form{
+    background-color: #e0e0e0;
+    height: 100%;
+    background-image: url(../imgs/bg00.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.col-preview{
+    background-color: cornflowerblue;
+    height: 100%;
+    background-image: url(../imgs/bg01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+}
+.a3{
+    overflow: hidden;
+    width: 3040px;
+    height: 2050px;
+    position: absolute;
+    background: #fff;
+    /* position: absolute; */
+    z-index: -5;
+}
+
+.figurinha{
+    height: 490px;
+    width: 380px;
+    overflow: hidden!important;
+    position: relative;
+    margin: 0px auto;
+    background: #fff;
+    border: 1px solid #999;
+}
+.a3 .figurinha{
+    float: left;
+    overflow: !important;
+}
+.figurinha__drag{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+.figurinha__foto__size{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+}
+div.figurinha__foto{
+    position: absolute;
+    z-index: 10;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(avatar.jpg); */
+    background-repeat: no-repeat;
+}
+img.figurinha__foto{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+.figurinha__mascara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+    background-size: 100%;
+    pointer-events: none;
+    background-position: center;
+}
+.figurinha__data,
+.figurinha__nome,
+.figurinha__dados{
+    position: absolute;
+    font-weight: bold;
+    color: #000;
+    z-index: 30;
+    font-family: Arial, Helvetica, sans-serif;
+    pointer-events: none;
+}
+
+.figurinha__data{
+    font-size: 12px;
+    margin-left: 116px;
+    margin-top: 402px;
+    width: 66px;
+    text-align: center;
+}
+.figurinha__nome{
+    font-size: 18px;
+    margin-left: 74px;
+    margin-top: 421px;
+}
+.figurinha__dados{
+    font-size: 11px;
+    margin-left: 69px;
+    margin-top: 444px;
+    text-align: right;
+    width: 276px;
+    padding-right: 5px;
+}
+
+
+.modal{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+.modal__overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal__area{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
